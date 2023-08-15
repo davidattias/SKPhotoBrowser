@@ -11,7 +11,7 @@ import UIKit
 // helpers which often used
 private let bundle = Bundle(for: SKPhotoBrowser.self)
 
-class SKToolbar: UIToolbar {
+open class SKToolbar: UIToolbar {
     var toolActionButton: UIBarButtonItem!
     fileprivate weak var browser: SKPhotoBrowser?
     

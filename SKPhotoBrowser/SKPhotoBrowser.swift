@@ -34,7 +34,7 @@ open class SKPhotoBrowser: UIViewController {
     // child component
     fileprivate var actionView: SKActionView!
     fileprivate(set) var paginationView: SKPaginationView!
-    var toolbar: SKToolbar!
+    open var toolbar: SKToolbar!
 
     // actions
     fileprivate var activityViewController: UIActivityViewController!

@@ -31,14 +31,14 @@ public class SKToolbar: UIToolbar {
         setupToolbar()
     }
     
-    override public func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        if let view = super.hitTest(point, with: event) {
-            if SKMesurement.screenWidth - point.x < 50 { // FIXME: not good idea
-                return view
-            }
-        }
-        return nil
-    }
+    // override public func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+    //     if let view = super.hitTest(point, with: event) {
+    //         if SKMesurement.screenWidth - point.x < 50 { // FIXME: not good idea
+    //             return view
+    //         }
+    //     }
+    //     return nil
+    // }
 }
 
 private extension SKToolbar {

@@ -236,11 +236,11 @@ open class SKPhotoBrowser: UIViewController {
         }
         
         var activityItems: [AnyObject] = []
+	activityItems.append(underlyingImage)
 	if let shareExtraCaption = SKPhotoBrowserOptions.shareExtraCaption {
 		let caption = shareExtraCaption
 		activityItems.append(caption as AnyObject)
 	}
-	activityItems.append(underlyingImage)
         
         if let activityItemProvider = activityItemProvider {
             activityItems.append(activityItemProvider.item as AnyObject)

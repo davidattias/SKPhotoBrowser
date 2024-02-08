@@ -15,7 +15,7 @@ open class SKPhotoBrowser: UIViewController {
     // open function
     open var currentPageIndex: Int = 0
     open var initPageIndex: Int = 0
-    open var activityItemProviders: [UIActivityItemProvider]?
+    open var activityItemProviders: [UIActivityItemSource]?
     open var photos: [SKPhotoProtocol] = []
 	open var autoHideControllsfadeOutDelay: Double = 4.0
     open var shouldAutoHideControlls: Bool = true
